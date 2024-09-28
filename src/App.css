@@ -1,0 +1,508 @@
+/* app.css */
+
+/* General Styles */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f4f9;
+}
+
+h1, h2, h3 {
+  color: #333;
+  margin-bottom: 10px;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  border-radius: 5px;
+  border: none;
+  background-color: #28a745;
+  color: #fff;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #218838;
+}
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* HabitTracker Styles */
+.habit-tracker {
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.habit-tracker h2 {
+  color: #007bff;
+}
+
+.habit-tracker p {
+  margin: 10px 0;
+}
+
+.habit-tracker button {
+  background-color: #007bff;
+}
+
+.habit-tracker button:hover {
+  background-color: #0056b3;
+}
+
+/* UserProfile Styles */
+.user-profile {
+  background-color: #fdfdfd;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.user-profile h2 {
+  color: #333;
+}
+
+.user-profile p {
+  font-size: 1.1rem;
+  margin: 10px 0;
+}
+
+.user-profile .profile-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.user-profile .profile-info label {
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+.user-profile .profile-info input {
+  margin-bottom: 10px;
+  padding: 8px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.user-profile button {
+  background-color: #32ff47cd;
+}
+
+.user-profile button:hover {
+  background-color: #e0a800;
+}
+
+/* PieChart Styles */
+.pie-chart-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0;
+}
+
+.pie-chart-container h3 {
+  color: #333;
+  text-align: center;
+}
+
+/* Notifications */
+.Toastify__toast {
+  font-size: 1rem;
+  color: #fff;
+  background-color: #007bff;
+}
+
+.Toastify__toast--info {
+  background-color: #17a2b8;
+}
+
+.Toastify__toast-body {
+  font-size: 1rem;
+}
+
+.notification-container {
+  position: fixed;
+  top: 0;
+  right: 0;
+  padding: 20px;
+  z-index: 999;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .container {
+    padding: 10px;
+  }
+
+  .user-profile .profile-info {
+    flex-direction: column;
+  }
+
+  .pie-chart-container {
+    flex-direction: column;
+  }
+}
+body {
+  display: flex; /* Enable flexbox on body */
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  height: 100vh; /* Full viewport height */
+  margin: 0; /* Remove default margin */
+  background-color: #f0f0f0; /* Optional: Set a background color */
+}
+
+.habit-tracker {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: #ffffff; /* White background for habit tracker */
+  padding: 30px; /* Padding around the content */
+  margin: 20px; /* Margin around the container */
+  max-width: 500px; /* Maximum width of the container */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow effect */
+}
+
+.habit-tracker h3 {
+  margin-bottom: 20px; /* Space below the heading */
+}
+
+.habit-tracker p {
+  margin: 10px 0; /* Space between paragraphs */
+}
+
+.habit-tracker button {
+  margin-top: 15px; /* Space above the button */
+  padding: 10px 20px; /* Padding inside the button */
+  border: none; /* Remove default border */
+  border-radius: 5px; /* Rounded corners for button */
+  background-color: #007bff; /* Button background color */
+  color: white; /* Button text color */
+  cursor: pointer; /* Change cursor to pointer */
+  transition: background-color 0.3s; /* Smooth background color change */
+}
+
+.habit-tracker button:hover {
+  background-color: #0056b3; /* Darker shade on hover */
+}
+.habit-tracker {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: #ffffff; /* Background for habit tracker */
+  padding: 30px; /* Padding around the content */
+  margin: 20px; /* Margin around the container */
+  max-width: 500px; /* Maximum width of the container */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow effect */
+}
+
+h3 {
+  margin: 20px 0; /* Space above and below the header */
+}
+/* styles.css */
+.user-profile, .user-profile-display {
+  margin: 20px;
+  padding: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.submit-btn {
+  background-color: #36A2EB;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.submit-btn:hover {
+  background-color: #0056b3;
+}
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  background-image: url('/src/logo.png'); /* Correctly referencing the public folder */
+  background-size: cover; /* Ensures the image covers the whole background */
+  background-position: center; /* Centers the image */
+  background-repeat: no-repeat; /* Prevents the image from repeating */
+}
+.italic-text {
+  font-style: italic;
+  color: #73e90c; /* Replace with your desired color */
+}
+/* app.css */
+
+/* General Styles */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f4f9;
+}
+
+h1, h2, h3 {
+  color: #333;
+  margin-bottom: 10px;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  border-radius: 5px;
+  border: none;
+  background-color: #28a745;
+  color: #fff;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #218838;
+}
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* HabitTracker Styles */
+.habit-tracker {
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.habit-tracker h2 {
+  color: #007bff;
+}
+
+.habit-tracker p {
+  margin: 10px 0;
+}
+
+.habit-tracker button {
+  background-color: #007bff;
+}
+
+.habit-tracker button:hover {
+  background-color: #0056b3;
+}
+
+/* UserProfile Styles */
+.user-profile {
+  background-color: #fdfdfd;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.user-profile h2 {
+  color: #333;
+}
+
+.user-profile p {
+  font-size: 1.1rem;
+  margin: 10px 0;
+}
+
+.user-profile .profile-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.user-profile .profile-info label {
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+.user-profile .profile-info input {
+  margin-bottom: 10px;
+  padding: 8px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.user-profile button {
+  background-color: #32ff47cd;
+}
+
+.user-profile button:hover {
+  background-color: #e0a800;
+}
+
+/* PieChart Styles */
+.pie-chart-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0;
+}
+
+.pie-chart-container h3 {
+  color: #333;
+  text-align: center;
+}
+
+/* Notifications */
+.Toastify__toast {
+  font-size: 1rem;
+  color: #fff;
+  background-color: #007bff;
+}
+
+.Toastify__toast--info {
+  background-color: #17a2b8;
+}
+
+.Toastify__toast-body {
+  font-size: 1rem;
+}
+
+.notification-container {
+  position: fixed;
+  top: 0;
+  right: 0;
+  padding: 20px;
+  z-index: 999;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .container {
+    padding: 10px;
+  }
+
+  .user-profile .profile-info {
+    flex-direction: column;
+  }
+
+  .pie-chart-container {
+    flex-direction: column;
+  }
+}
+body {
+  display: flex; /* Enable flexbox on body */
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  height: 100vh; /* Full viewport height */
+  margin: 0; /* Remove default margin */
+  background-color: #f0f0f0; /* Optional: Set a background color */
+}
+
+.habit-tracker {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: #ffffff; /* White background for habit tracker */
+  padding: 30px; /* Padding around the content */
+  margin: 20px; /* Margin around the container */
+  max-width: 500px; /* Maximum width of the container */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow effect */
+}
+
+.habit-tracker h3 {
+  margin-bottom: 20px; /* Space below the heading */
+}
+
+.habit-tracker p {
+  margin: 10px 0; /* Space between paragraphs */
+}
+
+.habit-tracker button {
+  margin-top: 15px; /* Space above the button */
+  padding: 10px 20px; /* Padding inside the button */
+  border: none; /* Remove default border */
+  border-radius: 5px; /* Rounded corners for button */
+  background-color: #007bff; /* Button background color */
+  color: white; /* Button text color */
+  cursor: pointer; /* Change cursor to pointer */
+  transition: background-color 0.3s; /* Smooth background color change */
+}
+
+.habit-tracker button:hover {
+  background-color: #0056b3; /* Darker shade on hover */
+}
+.habit-tracker {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: #ffffff; /* Background for habit tracker */
+  padding: 30px; /* Padding around the content */
+  margin: 20px; /* Margin around the container */
+  max-width: 500px; /* Maximum width of the container */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow effect */
+}
+
+h3 {
+  margin: 20px 0; /* Space above and below the header */
+}
+/* styles.css */
+.user-profile, .user-profile-display {
+  margin: 20px;
+  padding: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.submit-btn {
+  background-color: #36A2EB;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.submit-btn:hover {
+  background-color: #0056b3;
+}
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  background-image: url('/src/logo.png'); /* Correctly referencing the public folder */
+  background-size: cover; /* Ensures the image covers the whole background */
+  background-position: center; /* Centers the image */
+  background-repeat: no-repeat; /* Prevents the image from repeating */
+}
+.italic-text {
+  font-style: italic;
+  color: #73e90c; /* Replace with your desired color */
+}
+
+
